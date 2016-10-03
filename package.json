@@ -1,0 +1,23 @@
+{
+  "name": "xhr-hook-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watchify -v -d index.babel.js -t [ babelify ] -o 'exorcist index.js.map > index.js'",
+    "start": "http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.9.0",
+    "xhr-mock": "git://github.com/pnlybubbles/xhr-mock.git#patch"
+  },
+  "devDependencies": {
+    "babel-preset-es2016": "^6.16.0",
+    "babelify": "^7.3.0",
+    "exorcist": "^0.4.0",
+    "watchify": "^3.7.0"
+  }
+}
